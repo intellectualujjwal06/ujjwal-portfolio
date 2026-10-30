@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { ArrowUpRight, Code2 } from "lucide-react";
+export function SiteHeader(){return <header className="site-header"><div className="container nav-wrap"><Link href="/" className="brand"><span className="brand-mark"><Code2 size={18}/></span><span>Ujjwal Bhatt<span className="brand-dot">.</span></span></Link><nav className="desktop-nav" aria-label="Main navigation"><Link href="/#work">Work</Link><Link href="/#about">About</Link><Link href="/#skills">Skills</Link><Link href="/#contact" className="nav-contact">Let&apos;s talk <ArrowUpRight size={15}/></Link></nav><Link href="/#contact" className="mobile-contact">Contact <ArrowUpRight size={15}/></Link></div></header>}

@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { ArrowUpRight, Layers3 } from "lucide-react";
+import type { Project } from "@/lib/projects";
+export function ProjectCard({project,index}:{project:Project;index:number}){return <article className={`project-card accent-${project.accent}`}><div className="project-card-top"><span className="project-index">{String(index+1).padStart(2,"0")}</span><span className="project-icon"><Layers3 size={19}/></span></div><p className="eyebrow">{project.category}</p><h3>{project.name}</h3><p className="project-summary">{project.summary}</p><div className="tag-list">{project.stack.slice(0,4).map(s=><span className="tag" key={s}>{s}</span>)}{project.stack.length>4&&<span className="tag">+{project.stack.length-4}</span>}</div><Link href={`/projects/${project.slug}`} className="text-link">Explore case study <ArrowUpRight size={16}/></Link></article>}

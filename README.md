@@ -35,5 +35,5 @@ Responsive portfolio built with Next.js App Router, TypeScript, Tailwind CSS, an
 - `lib/projects.ts` — project content
 - `public/` — resume and approved assets
 
-## Accuracy and privacy
+## Accuracy and privacy 
 The starter avoids invented metrics, fake testimonials, and fabricated project URLs. Add only public or approved project details. Project write-ups are intentionally high-level; update them with specific, verifiable technical decisions before publishing.
